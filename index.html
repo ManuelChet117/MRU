@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física en Movimiento: MRU y MRUV</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Física en Movimiento: MRU y MRUV</h1>
+        <nav>
+            <a href="#mru">Movimiento Rectilíneo Uniforme (MRU)</a>
+            <a href="#mruv">Movimiento Rectilíneo Uniformemente Variado (MRUV)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección MRU -->
+        <section id="mru">
+            <h2>Movimiento Rectilíneo Uniforme (MRU)</h2>
+            <div>
+                <p>
+                    El Movimiento Rectilíneo Uniforme (MRU) describe el desplazamiento de un objeto que se mueve en una trayectoria recta con una velocidad constante. Este tipo de movimiento es fundamental en la física para entender cómo se comportan los objetos cuando no hay aceleración.
+                </p>
+                <p>
+                    En el MRU, la velocidad y el tiempo son variables constantes, lo que implica que la distancia recorrida por el objeto es directamente proporcional al tiempo transcurrido. Este comportamiento se puede representar en un plano cartesiano donde el objeto se desplaza en línea recta.
+                </p>
+                <p>
+                    Las ecuaciones básicas del MRU involucran tres variables principales: Velocidad (V), Distancia (d) y Tiempo (t). A continuación, se presenta la fórmula principal cuando la velocidad es la incógnita:
+                </p>
+                <img src="/img/mru1.png" alt="IMAGEN MRU" width="500">
+                <img src="/img/mr2.jpg" alt="IMAGEN MRU" width="500">
+                
+                <div class="calculos-mru">
+                    <!-- Calculadora de Velocidad -->
+                    <div class="calculadora">
+                        <h3>Calcular Velocidad</h3>
+                        <p>Determina la velocidad constante del objeto utilizando la fórmula:</p>
+                        <p><strong>v = d / t</strong></p>
+                        <form id="formMRUvel">
+                            <label for="mru-distancia">Distancia (m): </label>
+                            <input type="number" id="mru-distancia" required>
+
+                            <label for="mru-tiempo">Tiempo (s): </label>
+                            <input type="number" id="mru-tiempo" required>
+
+                            <button type="submit">Calcular Velocidad (v)</button>
+                        </form>
+                        <div id="resultado-mru"></div>
+                    </div>
+
+                    <!-- Calculadora de Distancia -->
+                    <div class="calculadora">
+                        <h3>Calcular Distancia</h3>
+                        <p>Calcula la distancia recorrida por el objeto:</p>
+                        <p><strong>d = v × t</strong></p>
+                        <form id="formMRUdist">
+                            <label for="mru-velocidad">Velocidad (m/s): </label>
+                            <input type="number" id="mru-velocidad1" required>
+
+                            <label for="mru-tiempo1">Tiempo (s): </label>
+                            <input type="number" id="mru-tiempo1" required>
+
+                            <button type="submit">Calcular Distancia (d)</button>
+                        </form>
+                        <div id="resultado1-mru"></div>
+                    </div>
+
+                    <!-- Calculadora de Tiempo -->
+                    <div class="calculadora">
+                        <h3>Calcular Tiempo</h3>
+                        <p>Determina el tiempo necesario para recorrer una distancia dada:</p>
+                        <p><strong>t = d / v</strong></p>
+                        <form id="formMRUtie">
+                            <label for="mru-distancia2">Distancia (m): </label>
+                            <input type="number" id="mru-distancia2" required>
+
+                            <label for="mru-velocidad2">Velocidad (m/s): </label>
+                            <input type="number" id="mru-velocidad2" required>
+                                    
+                            <button type="submit">Calcular Tiempo (t)</button>
+                        </form>
+                        <div id="resultado2-mru"></div><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección MRUV -->
+        <section id="mruv">
+            <h2>Movimiento Rectilíneo Uniformemente Variado (MRUV)</h2>
+            <div>
+                <p>
+                    El Movimiento Rectilíneo Uniformemente Variado (MRUV) se refiere al desplazamiento de un objeto que se mueve en línea recta con una aceleración constante. A diferencia del MRU, en el MRUV la velocidad del objeto cambia de manera uniforme a lo largo del tiempo.
+                </p>
+                <p>
+                    Este tipo de movimiento es esencial para comprender fenómenos como la aceleración de vehículos, la caída libre de los cuerpos bajo la influencia de la gravedad, entre otros. Las fórmulas del MRUV permiten calcular variables como la velocidad final, la distancia recorrida y el tiempo de movimiento.
+                </p>
+                <img src="/img/mruv1.jpg" alt="MRUV1" width="500">
+                <img src="mruv2.jpg" alt="MRUV2" width="500">
+                
+                <div class="formulas-mruv">
+                    <h3>Fórmulas Básicas del MRUV</h3>
+                    <ul>
+                        <li><strong>Velocidad Final (v):</strong> v = v₀ + a·t</li>
+                        <li><strong>Distancia Recorrida (s):</strong> s = v₀·t + (1/2)·a·t²</li>
+                        <li><strong>Velocidad Final al Cuadrado (v²):</strong> v² = v₀² + 2·a·s</li>
+                    </ul>
+                </div>
+
+                <div class="calculos-mruv">
+                    <!-- Calculadora de Velocidad Final -->
+                    <div class="calculadora">
+                        <h3>Calcular Velocidad Final</h3>
+                        <p>Determina la velocidad final utilizando la fórmula:</p>
+                        <p><strong>v = v₀ + a × t</strong></p>
+                        <form id="formMRUVvel">
+                            <label for="mruv-inicial">Velocidad Inicial (v₀) m/s: </label>
+                            <input type="number" id="mruv-inicial" required>
+
+                            <label for="mruv-aceleracion">Aceleración (a) m/s²: </label>
+                            <input type="number" id="mruv-aceleracion" required>
+
+                            <label for="mruv-tiempo">Tiempo (t) s: </label>
+                            <input type="number" id="mruv-tiempo" required>
+
+                            <button type="submit">Calcular Velocidad Final (v)</button>
+                        </form>
+                        <div id="resultado-mruv-vel"></div>
+                    </div>
+
+                    <!-- Calculadora de Distancia Recorrida -->
+                    <div class="calculadora">
+                        <h3>Calcular Distancia Recorrida</h3>
+                        <p>Calcula la distancia recorrida utilizando la fórmula:</p>
+                        <p><strong>s = v₀ × t + ½ × a × t²</strong></p>
+                        <form id="formMRUVdist">
+                            <label for="mruv-inicial1">Velocidad Inicial (v₀) m/s: </label>
+                            <input type="number" id="mruv-inicial1" required>
+
+                            <label for="mruv-aceleracion1">Aceleración (a) m/s²: </label>
+                            <input type="number" id="mruv-aceleracion1" required>
+
+                            <label for="mruv-tiempo1">Tiempo (t) s: </label>
+                            <input type="number" id="mruv-tiempo1" required>
+
+                            <button type="submit">Calcular Distancia (s)</button>
+                        </form>
+                        <div id="resultado-mruv-dist"></div>
+                    </div>
+
+                    <!-- Calculadora de Aceleración -->
+                    <div class="calculadora">
+                        <h3>Calcular Aceleración</h3>
+                        <p>Determina la aceleración utilizando la fórmula:</p>
+                        <p><strong>a = (v - v₀) / t</strong></p>
+                        <form id="formMRUVace">
+                            <label for="mruv-final">Velocidad Final (v) m/s: </label>
+                            <input type="number" id="mruv-final" required>
+
+                            <label for="mruv-inicial2">Velocidad Inicial (v₀) m/s: </label>
+                            <input type="number" id="mruv-inicial2" required>
+
+                            <label for="mruv-tiempo2">Tiempo (t) s: </label>
+                            <input type="number" id="mruv-tiempo2" required>
+                                    
+                            <button type="submit">Calcular Aceleración (a)</button>
+                        </form>
+                        <div id="resultado-mruv-ace"></div><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Nombre: Manuel Adrian Chet Samayoa</p>
+            <p>Carnet: 2290-20-15833</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
